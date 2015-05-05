@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="12%" height="171" valign="top" background="<{$xoops_imageurl}>images/slimupfont.jpg"><img src="<{$xoops_imageurl}>images/spacer.gif" width="100%" height="1"> </td>
+    <td width="10%" valign="top" background="<{$xoops_imageurl}>images/slimupfont.jpg"><div align="right"><img src="<{$xoops_imageurl}>images/leftshadow.jpg" width="11" height="171"></div></td>
+    <td width="714" valign="top" colspan="2">
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="714" height="171">
+                  <param name="movie" value="<{$xoops_imageurl}>flash/olney2.swf">
+                  <param name="quality" value="high">
+                  <embed src="<{$xoops_imageurl}>flash/olney2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="714" height="171"></embed>
+                </object>
+            </td>
+          </tr>
+<!--          <tr>
+            <td height="4"><img src="<{$xoops_imageurl}>images/spacer.gif" width="714" height="1"></td>
+          </tr>-->
+        </table>
+    </td>
+    <td width="8%" valign="top" background="<{$xoops_imageurl}>images/slimupfont.jpg"><img src="<{$xoops_imageurl}>images/rightshadow.jpg" width="15" height="171"></td>
+    <td width="22%" valign="top" background="<{$xoops_imageurl}>images/slimupfont.jpg">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><div align="right"><img src="<{$xoops_imageurl}>images/leftshadow2.jpg" width="11" height="100%"></div></td>
+    <td valign="top" colspan="2" width="714"><div align="center"><img src="<{$xoops_imageurl}>images/menu.jpg" width="714" height="32" border="0" usemap="#Map" href="index-5.html">
+        <map name="Map">
+          <area shape="rect" coords="10,1,86,39" href="index-1.html">
+          <area shape="rect" coords="97,2,170,42" href="index-2.html">
+          <area shape="rect" coords="180,1,253,38" href="index-3.html">
+          <area shape="rect" coords="267,3,342,73" href="index-4.html">
+          <area shape="rect" coords="353,3,425,46" href="index-5.html">
+        </map>
+   </td>
+   <td id="rightshadow">&nbsp;</td>
+   <td>&nbsp;</td>
+ </tr>
+ <!-- XOOOPS Banner Ads -->
+ <tr>
+    <td valign="top">&nbsp;</td>
+    <td id="leftshadow">&nbsp;</td>
+    <td id="headerbanner" colspan="2"><{$xoops_banner}></td>
+    <td id="rightshadow">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+ <tr>
+    <td colspan="2">&nbsp;</td>
+    <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+            <{include file="theme3981f/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+    </td>
+    <td id="centercolumn">
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td id="centerLcolumn">
+                    <!-- Start center-left blocks loop -->
+                    <{foreach item=block from=$xoops_clblocks}>
+                        <{include file="theme3981f/theme_blockcenter_l.html"}>
+                    <{/foreach}>
+                    <!-- End center-left blocks loop -->
+                </td>
+                <td id="centerRcolumn">
+                    <!-- start center-right blocks loop -->
+                    <{foreach item=block from=$xoops_crblocks}>
+                        <{include file="theme3981f/theme_blockcenter_r.html"}>
+                    <{/foreach}>
+                    <!-- End center-right blocks loop -->
+                </td>
+            </tr>
+            <tr>
+                <td id="centerCcolumn" colspan="2">
+                    <!-- start center-center blocks loop -->
+                    <{foreach item=block from=$xoops_ccblocks}>
+                        <{include file="theme3981f/theme_blockcenter_c.html"}>
+                    <{/foreach}>
+                    <!-- End center-center blocks loop -->
+                </td>
+            </tr>
+        </table>
+        <{/if}>
+        <div id="content">
+            <{$xoops_contents}>
+        </div>
+    </td>
+    <td id="rightshadow">&nbsp;</td>
+    <td id="rightcolumn">&nbsp;
+        <{if $xoops_showrblock == 1}>
+            <!-- Start right blocks loop -->
+            <{foreach item=block from=$xoops_rblocks}>
+                <{include file="theme3981f/theme_blockright.html"}>
+            <{/foreach}>
+            <!-- End right blocks loop -->
+        <{/if}>
+    </td>
+ </tr>
+ <tr>
+    <td>&nbsp;</td>
+    <td valign="top"><div align="right"><img src="<{$xoops_imageurl}>images/leftshadow2.jpg" width="11"></div></td>
+    <td valign="top" colspan="2">
+        <table width="100%" height="32"  border="0" cellpadding="0" cellspacing="0" background="<{$xoops_imageurl}>images/footerbackground.jpg">
+            <tr>
+                <td width="100%" align="center">&nbsp;&nbsp;<span class="style8"><{$xoops_footer}></span></td>
+            </tr>
+        </table>
+    </td>
+    <td valign="top"><img src="<{$xoops_imageurl}>images/rightshadow2.jpg" width="15"></td>
+    <td>&nbsp;</td>
+ </tr>
+</table>
+</body>
+</html>
